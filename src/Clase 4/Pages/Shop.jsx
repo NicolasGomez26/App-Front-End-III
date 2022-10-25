@@ -3,9 +3,9 @@ import Header from '../Components/Header'
 
 const Shop = () => {
   return (
-    <div>
+    <>
         <Header titulo='Shop'/>
-    </div>
+    </>
   )
 }
 

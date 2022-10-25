@@ -1,6 +1,5 @@
-
-const FuncComponent = () =>{
-    return <h1>Function Component</h1>
+const FuncComponent = () => {
+    return <h1>Componente de función</h1>
 }
 
 export default FuncComponent

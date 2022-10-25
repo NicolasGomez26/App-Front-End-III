@@ -1,7 +1,8 @@
-import { Component } from "react";
+import React from "react";
 
-export default class ClassComponent extends Component {
-    render() {
-      return <h1>Class Component</h1>
-    }
+export default class ClassComponent extends React.Component {
+
+  render() {
+    return <h1>Componente de Clase</h1>
+  }
 }

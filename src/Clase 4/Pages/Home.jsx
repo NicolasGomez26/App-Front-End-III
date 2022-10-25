@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../Components/Header'
 
-const Home = () => {
+const Home = (cualquiercosa) => {
+    const texto = 'Este es el texto de bienvenida'
   return (
-    <div>
-        <Header titulo='Home'/>
-    </div>
+    <>
+        <Header titulo='Home' text={texto}/>
+    </>
   )
 }
 

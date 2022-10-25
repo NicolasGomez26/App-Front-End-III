@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react"
 
-const Header = ({titulo}) => {
+const Header = ({titulo, text}) => {
   return (
-    <>
-        Bienvenidos al {titulo}
-    </>
+    <React.Fragment>
+        <h2>Bienvenidos a {titulo}</h2>
+        {text ? <p>{text}</p> : null}
+        {/* {text && <p>{text}</p>} */}
+    </React.Fragment>
   )
 }
 
