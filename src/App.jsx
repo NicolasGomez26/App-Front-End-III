@@ -1,12 +1,19 @@
 import './App.css'
-import Home from './Clase 5/Pages/Home'
-import Shop from './Clase 5/Pages/Shop'
+import Child from './Clase 6/Child'
+import Child2 from './Clase 6/Child2'
+import Parent from './Clase 6/Parent'
+
 
 const App = () =>  {
+  
   return (
     <>
-      <Home/>
-      <Shop/>
+      <Parent>
+        {(texto) => <Child texto={texto}/>}
+      </Parent>
+      <Parent>
+        {(texto) => <Child2 texto={texto}/>}
+      </Parent>
     </>
   )
 }
