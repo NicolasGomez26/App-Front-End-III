@@ -12,11 +12,13 @@ const Card = ({producto, setCart}) => {
 
   const [stock, setStock] = useState(0)
 
+  const {imagen, nombre, precio, id} = producto
+
   return (
     <div className={styles.card} style={shopStyles}>
-        <img src={producto.imagen} alt="" className={styles.imagen} />
-        <h2 className={styles.titulo}>{producto.id} - {producto.nombre}</h2>
-        <h3 className={styles.precio}>{producto.precio}</h3>
+        <img src={imagen} alt="" className={styles.imagen} />
+        <h2 className={styles.titulo}>{id} - {nombre}</h2>
+        <h3 className={styles.precio}>{precio}</h3>
         <section>
           <h4>
             <button onClick={() => setStock(stock + 1)}>+</button>

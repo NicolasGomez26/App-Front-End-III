@@ -1,11 +1,16 @@
+import { useState } from 'react'
 import './App.css'
-import Shop from './Clase 7/Pages/Shop'
+import Inputexample from './Clase 8/Components/Inputexample'
+import Register from './Clase 8/Pages/Register'
+
 
 
 const App = () =>  {
+ 
   return (
     <>
-      <Shop/>
+      {/* <Inputexample/> */}
+      <Register/>
     </>
   )
 }
