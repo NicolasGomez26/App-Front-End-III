@@ -1,16 +1,20 @@
 import { useState } from 'react'
 import './App.css'
-import Inputexample from './Clase 8/Components/Inputexample'
-import Register from './Clase 8/Pages/Register'
-
-
+import Login from './Clase10/Components/Login'
+import Home from './Clase10/Pages/Home'
 
 const App = () =>  {
- 
+  const [total, setTotal] = useState(0)
+
+  const comprar = () => {
+    // setTotal(prev => prev + 1)
+    setTotal(total + 1)
+  }
   return (
     <>
-      {/* <Inputexample/> */}
-      <Register/>
+      <Login/>
+      <Home comprar={comprar}/>
+      <h1>{total}</h1>
     </>
   )
 }
